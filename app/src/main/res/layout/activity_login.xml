@@ -42,6 +42,22 @@
             android:textAlignment="center"
             android:textSize="40sp" />
 
+
+        <top.defaults.view.TextButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="animateTextColor"
+            android:padding="4dp"
+            android:textSize="16sp"
+            app:defaultTextColor="@android:color/holo_blue_dark"
+            app:pressedTextColor="@android:color/holo_orange_dark"
+            app:disabledTextColor="@android:color/darker_gray"
+            app:underline="true"
+            app:effectDuration="200"
+            app:textEffect="animateColor"
+            app:backgroundEffect="ripple"/>
+
     </LinearLayout>
 
 </RelativeLayout>
