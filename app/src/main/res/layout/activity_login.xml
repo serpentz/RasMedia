@@ -2,53 +2,67 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context="com.rasmedia.rasmedia.LoginActivity"
-
-    >
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="290dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="231dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/holdinghands" />
-
+    android:background="@drawable/animation_list"
+    tools:context="com.rasmedia.rasmedia.LoginActivity">
 
     <LinearLayout
-
-
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
 
-        <TextView
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:paddingLeft="25dp"
+            app:srcCompat="@drawable/logonew_white" />
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/imageView"
-            android:layout_marginBottom="40dp"
-            android:text="Hey! You're..."
-            android:textAlignment="center"
-            android:textSize="40sp" />
+            android:layout_height="0dp"
+            android:layout_weight=".50"
+            android:padding="25dp"
+            android:orientation="vertical">
 
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textEmailAddress"
+                android:hint="Email"
+                android:textColorHint="@android:color/white"
+
+                 />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColorHint="@android:color/white"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Forgotten your password?"/>
+
+
+
+
+
+        </LinearLayout>
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-
-
-        android:layout_above="@+id/linearLayout"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="449dp"
-        app:srcCompat="@drawable/logonew" />
 
 </RelativeLayout>
