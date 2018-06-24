@@ -37,6 +37,7 @@
                 android:inputType="text|textEmailAddress"
                 android:hint="Email"
                 android:textColorHint="@android:color/white"
+                android:id="@+id/loginEmail"
 
                  />
 
@@ -46,11 +47,13 @@
                 android:inputType="textPassword"
                 android:hint="Password"
                 android:textColorHint="@android:color/white"
+                android:id="@+id/loginPassword"
                 />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"/>
+                android:text="Login"
+                android:id="@+id/loginButton"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
