@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_2"
+    android:orientation="vertical"
     tools:context="com.rasmedia.rasmedia.RegisterActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:padding="30dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:drawableEnd="@drawable/ic_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+
+                android:background="@drawable/edittext_backgroud"
+                android:padding="15dp"
+                android:layout_margin="2dp"
+                android:textSize="17sp" />
+
+            <EditText
+                android:drawableRight="@drawable/ic_envelope"
+
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_backgroud"
+                android:padding="15dp"
+                android:hint="Email"
+                android:textSize="17sp" />
+
+            <EditText
+                android:drawableEnd="@drawable/ic_locked"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_backgroud"
+                android:padding="15dp"
+                android:hint="Password"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="100"
+                >
+                <EditText
+                    android:background="@drawable/edittext_backgroud"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:hint="Country"/>
+                <EditText
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/edittext_backgroud"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:hint="City"/>
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_backgroud"
+                android:src="@drawable/edittext_backgroud"
+                android:layout_marginTop="12dp"
+                android:text="SIGN UP"
+                android:textColor="@color/red"
+                />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALREADY HAD AN ACCOUNT? "/>
+
+
+
+
+
+</LinearLayout>

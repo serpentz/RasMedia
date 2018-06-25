@@ -16,6 +16,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private RelativeLayout layout;
     private AnimationDrawable animationDrawable;
+    private TextView register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         layout = findViewById(R.id.relative_layout_login);
+        register = findViewById(R.id.textView_next);
 
         // onCreate
         animationDrawable =(AnimationDrawable)layout.getBackground();
@@ -36,6 +38,14 @@ public class LoginActivity extends AppCompatActivity {
         Button loginButton = findViewById(R.id.loginButton);
         final EditText loginEmail = findViewById(R.id.loginEmail);
         final EditText loginPassword = findViewById(R.id.loginPassword);
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+            }
+        });
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
